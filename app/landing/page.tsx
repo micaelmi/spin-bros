@@ -1,12 +1,16 @@
+import { BackToTop } from "@/components/buttons/back-to-top";
 import CTAButton from "@/components/buttons/call-to-action";
+import { TextCarousel } from "@/components/carousels/text-carousel";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { testimonials } from "@/data/testimonials";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 
 export default function Landing() {
   return (
     <div className="flex flex-col items-center bg-[#003253] px-2 border-[#32AA29] border-t-4 min-h-screen">
+      <BackToTop />
       <header className="flex justify-around items-center py-11 w-full">
         <Image
           alt="logo spin bros"
@@ -37,14 +41,7 @@ export default function Landing() {
           </h2>
           <h4 className="text-[#D4F1B7]">What Our Students Say</h4>
         </div>
-        <Card className="bg-transparent bg-linear-to-r from-[#00608A] to-[#026FB945] mb-10 px-4 py-3 border border-[#5EBFFF] rounded-3xl">
-          <p className="text-white text-lg">
-            “I strongly recommend Micael as a table tennis coach. He has an
-            exceptional ability to analyze body movements with precision and
-            explain them clearly on the spot. His logical, theory-based approach
-            is valuable for players at all levels... — Masayuki, Melbourne”
-          </p>
-        </Card>
+        <TextCarousel texts={testimonials} />
 
         <CTAButton
           label="Book Your $25 Trial Lesson"
