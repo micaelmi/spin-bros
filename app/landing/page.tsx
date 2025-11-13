@@ -56,12 +56,47 @@ export default function Landing() {
           Meet the Bros
         </h2>
         <Image
-          alt="Lucas"
-          src={"/lucas-profile-1.png"}
-          width={340}
-          height={322}
+          alt="Brothers Micael and Lucas in the podium"
+          src={"/bros.jpg"}
+          width={811}
+          height={1028}
           loading="lazy"
+          className="rounded-lg"
         />
+
+        <p>
+          We are brothers Micael and Lucas, and we’ve been training in table
+          tennis since 2019. In 2023, we began competing in official tournaments
+          across Brazil, and since then, we’ve achieved great results — together
+          winning over 30 medals and reaching the Top 100 national rankings in
+          our respective categories, Under-21 and Under-19, in 2024.
+        </p>
+        <div className="flex justify-center items-center gap-2 py-2 max-w-full">
+          <Image
+            alt="Micael profile picture"
+            src={"/micael.jpg"}
+            width={2003}
+            height={2003}
+            loading="lazy"
+            className="rounded-lg max-w-1/2 aspect-square"
+          />
+          <Image
+            alt="Lucas profile picture"
+            src={"/lucas-2.jpg"}
+            width={1210}
+            height={1145}
+            loading="lazy"
+            className="rounded-lg max-w-1/2 aspect-square"
+          />
+        </div>
+        <p>
+          Competing in a variety of tournaments has helped us grow both as
+          players and as students of the sport, deepening our understanding of
+          its technical and strategic aspects. Through our coaching program,
+          Spin Bros, we share this experience and knowledge to help others
+          develop their skills, improve their game, and discover the same
+          passion for table tennis that drives us every day.
+        </p>
         <Card className="bg-transparent bg-linear-to-r from-[#00608A] to-[#026FB945] my-10 px-4 py-8 border border-[#5EBFFF] rounded-3xl">
           <h2 className="bg-clip-text bg-linear-to-r from-[#8AD0FF] to-[#F3FF98] font-bold text-transparent text-3xl">
             Why train with us?
@@ -121,9 +156,9 @@ export default function Landing() {
           </h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25216.765836161634!2d144.9425513481146!3d-37.81122665143123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642caf37771c5%3A0x834e664d24dced61!2sCBD%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1762569181573!5m2!1sen!2sau"
-            className="border-0 rounded-3xl aspect-square"
+            className="border-0 rounded-3xl min-w-[280px] aspect-square"
             loading="lazy"
-          ></iframe>
+          />
           <div className="px-4 py-2">
             <h3 className="font-bold text-2xl">Melbourne</h3>
             <p className="text-lg">
