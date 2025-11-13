@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { testimonials } from "@/data/testimonials";
 import { Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Landing() {
   return (
@@ -20,7 +21,9 @@ export default function Landing() {
           loading="eager"
         />
         <Button className="bg-linear-to-r from-[#00969B] to-[#5D7C00] p-4 border border-[#FFFA95] rounded-4xl font-bold text-xl">
-          Book now
+          <Link href="https://spinbros.youcanbook.me/" target="_blank">
+            Book now
+          </Link>
         </Button>
       </header>
       <section className="space-y-3 px-4">
